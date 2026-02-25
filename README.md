@@ -1,9 +1,7 @@
 # A Structured Framework for Selecting Indian Equity Mutual Funds  
 ### A Quantitative–Qualitative Scoring Approach for Long-Term Investors  
 
-**Author:** George Elias  
-**Affiliation:** Master’s Student, International Finance  
-**Project Type:** Independent Research  
+**Author:** George Elias
 **Disclaimer:** This project is for educational and analytical purposes only and does not constitute investment advice.
 
 ---
