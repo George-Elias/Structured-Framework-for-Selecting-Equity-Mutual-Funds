@@ -14,39 +14,30 @@ This project develops and implements a structured framework to evaluate and rank
 
 Rather than relying solely on headline past returns, the framework emphasizes:
 
-- Risk-adjusted performance  
-- Downside protection  
+- Risk-adjusted performance 
 - Performance consistency across market cycles  
-- Fund manager stability  
 - Organizational robustness  
 - Cost efficiency and investor suitability  
 
-The objective is to replicate the analytical workflow of a junior buy-side analyst systematically screening funds for long-term investors.
 
----
 
 ## Research Objectives
 
 1. Design a transparent and repeatable scoring model for equity mutual fund evaluation  
 2. Apply the framework to a representative universe of Indian equity funds  
-3. Test the robustness of rankings under varying weight assumptions  
-4. Assess the strengths and limitations of a rules-based fund selection approach  
+3. Assess the strengths and limitations of a rules-based fund selection approach  
 
----
+
 
 ## Fund Universe
 
-### Categories Analyzed
-- Large Cap  
+### Categories Analyzed 
 - Flexi Cap  
-- Mid Cap  
 
 ### Exclusion Criteria
 - Funds with less than 5 years of NAV history  
 - Funds with mandate or benchmark changes during the analysis period  
-- Funds with incomplete publicly available data  
-
-Final universe: ~100 Indian equity mutual funds.
+- Funds with incomplete publicly available data
 
 Funds are ranked **within category**, not across categories.
 
@@ -58,65 +49,22 @@ Funds are evaluated across six weighted pillars:
 
 | Pillar | Weight |
 |--------|--------|
-| Performance | 25% |
+| Performance & Consistency | 25% |
 | Risk Management | 25% |
 | Consistency | 15% |
-| Fund Manager Quality | 15% |
-| Organization Quality | 10% |
-| Costs & Product Fit | 10% |
+| Management & Organization Quality | 10% |
+| Costs | 10% |
 
 The framework prioritizes risk control and consistency over pure return maximization.
 
----
 
-## Quantitative Metrics
-
-### Performance
-- 3-Year CAGR  
-- 5-Year CAGR  
-
-### Risk
-- Standard Deviation (3Y)  
-- Maximum Drawdown (3Y)  
-
-### Consistency
-- Rolling 12-month outperformance frequency  
-- Worst rolling 1-year return  
-
-### Cost & Structure
-- Expense Ratio  
-- AUM considerations  
-
-All metrics are normalized using min–max scaling within each category.  
-Metrics where lower values are preferable are inverted before aggregation.
-
-Each fund receives:
-- Sub-metric scores  
-- Pillar-level scores  
-- Composite score (0–100)  
-
----
-
-## Qualitative Overlay
-
-Quantitative screening is complemented with:
-
-- Fund manager tenure analysis  
-- Management continuity assessment  
-- AMC scale and governance review  
-- Style drift evaluation  
-- Portfolio concentration and scalability considerations  
-
-This ensures decisions are not based solely on statistical outputs.
-
----
 
 ## Tools & Implementation
 
 - **Python (Pandas, NumPy)** – Data cleaning, metric computation, normalization  
-- **Excel** – Cross-validation and data verification  
-- **Power BI** – Interactive dashboard visualization  
-- Publicly available NAV and fund-level datasets  
+- **Excel** – Scoring analysis and data verification
+- **Word** - Insights documentation
+- Publicly available NAV and fund-level datasets from Morningstar, Value Research, NSE, and Kaggle
 
 The project emphasizes reproducibility, clarity, and structured decision-making.
 
@@ -125,9 +73,7 @@ The project emphasizes reproducibility, clarity, and structured decision-making.
 ## Key Findings
 
 - Top-ranked funds were not necessarily the highest-return funds  
-- Consistency and downside control significantly influenced rankings  
-- Rankings remained broadly stable under ±10% weight adjustments  
-- Simplified historical testing suggested improved drawdown characteristics versus category averages  
+- Consistency and downside control significantly influenced rankings
 
 The framework appears conservative and risk-aware by design.
 
@@ -136,10 +82,9 @@ The framework appears conservative and risk-aware by design.
 ## Limitations
 
 - Survivorship bias in available datasets  
-- Fully backward-looking metrics  
+- Entirely backward-looking metrics  
 - Subjectivity in qualitative scoring  
-- Simplified backtesting assumptions  
-- Limited portfolio-level factor exposure analysis  
+- Simplified backtesting assumptions 
 
 These constraints are acknowledged to avoid overstating conclusions.
 
@@ -147,7 +92,7 @@ These constraints are acknowledged to avoid overstating conclusions.
 
 ## Future Enhancements
 
-- Factor attribution (value, momentum, quality exposure)  
+- Factor attribution (market, value, momentum, quality exposure)  
 - Automated periodic re-ranking system  
 - Investor-specific risk customization module  
 - Extension to hybrid and international funds  
