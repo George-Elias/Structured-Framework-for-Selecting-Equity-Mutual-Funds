@@ -4,7 +4,7 @@
 **Author:** George Elias
 **Disclaimer:** This project is for educational and analytical purposes only and does not constitute investment advice.
 
----
+
 
 ## Overview
 
@@ -39,7 +39,7 @@ Rather than relying solely on headline past returns, the framework emphasizes:
 
 Funds are ranked **within category**, not across categories.
 
----
+
 
 ## Framework Structure
 
@@ -49,9 +49,8 @@ Funds are evaluated across six weighted pillars:
 |--------|--------|
 | Performance & Consistency | 25% |
 | Risk Management | 25% |
-| Consistency | 15% |
-| Management & Organization Quality | 10% |
-| Costs | 10% |
+| Management & Organization Quality | 25% |
+| Costs | 25% |
 
 The framework prioritizes risk control and consistency over pure return maximization.
 
@@ -66,7 +65,7 @@ The framework prioritizes risk control and consistency over pure return maximiza
 
 The project emphasizes reproducibility, clarity, and structured decision-making.
 
----
+
 
 ## Key Findings
 
@@ -75,7 +74,7 @@ The project emphasizes reproducibility, clarity, and structured decision-making.
 
 The framework appears conservative and risk-aware by design.
 
----
+
 
 ## Limitations
 
@@ -86,7 +85,7 @@ The framework appears conservative and risk-aware by design.
 
 These constraints are acknowledged to avoid overstating conclusions.
 
----
+
 
 ## Future Enhancements
 
@@ -96,7 +95,7 @@ These constraints are acknowledged to avoid overstating conclusions.
 - Extension to hybrid and international funds  
 - Advanced risk decomposition and beta stability testing  
 
----
+
 
 ## Project Philosophy
 
